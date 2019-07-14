@@ -38,7 +38,7 @@
         <!-- Custom styles for this template -->
         <link href="assets/css/style.css" rel="stylesheet"/>
 
-
+        <link href="assets/video/jsvideo.css" rel="stylesheet"/>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -157,12 +157,55 @@
             </header>
             <!-- end of header -->
 
+            <!--<section class="page-title" 
+                     style=" background-position: top;
+                     height: 759px;
+                     background-image: url(https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/Portada_Nosotros.png?alt=media&amp;token=38a71406-24ad-4f84-9680-c99207a24cb4)">
+                <div class="container" style="min-width: 100%">
+                    <iframe 
+                            src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&amp;controls=0&amp;fs=0"
+                            frameborder="0" ></iframe>
+                </div> 
+            </section>        -->
 
+            <section class="page-title" 
+                     style=" background-position: top;
+                     height: 100%; 
+                     padding: 0px;
+                     background-color: #020b12">
+                <div class="container" style="min-width: 100%;padding: 0px">
+                    <div style="padding:41.8% 0 0 0;position:relative;pointer-events: none" >
+                        <style>
+                            .player .vp-controls{
+                                visibility: hidden !important;
+                            }
+                        </style>
+
+                        <iframe 
+                            src="https://player.vimeo.com/video/344462990?autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;controls=0&amp;loop=1&amp;muted=1&amp;background=1"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen" 
+                            allowfullscreen="allowfullscreen">
+                        </iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div> 
+            </section> 
             <!-- start of hero -->   
-            <section class="hero hero-slider-wrapper">
+            <!--<section class="hero hero-slider-wrapper">
                 <div class="hero-slider hero-slider-style-1">
+                    <div class="video-responsive">
+                        
+
+                        <iframe id="ytplayer" type="text/html" width="720" height="405"
+                                src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&amp;controls=0&amp;fs=0"
+                                frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+
+
                     <div class="slide">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/Portada1.png?alt=media&amp;token=1070160a-4eab-4c31-b7e2-c4d535a325ce"  class="slider-bg"/>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.  </div>appspot.com/o/Portada1.png?alt=media&amp;token=1070160a-4eab-4c31-b7e2-c4d535a325ce"  class="slider-bg"/>
                         <div class="container">
                             <div class="row">
                                 <div class="col col-lg-8 col-sm-9 slide-caption">
@@ -209,7 +252,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
             <!-- end of hero slider -->
 
 
@@ -223,7 +266,7 @@
                             </div>
                         </div>
                         <div class="col col-lg-5 col-md-5" style="padding: 0px">
-                            <p>Texto Aqui .................................</p>
+                            <p>Nuestra trayectoria nos avala, ofrecemos servicios especializados con personal altamente capacitado.</p>
                         </div>
                         <div class="col col-lg-3 col-md-3">
                             <div class="all-service-link">
@@ -235,7 +278,7 @@
                     <div class="row">
                         <div class="col col-xs-12">
                             <div class="services-grids service-slider dots-s1">
-                                <div class="grid">
+                                <!--<div class="grid">
                                     <div class="inner mk-bg-img">
                                         <div class="details ">
                                             <div class="info">
@@ -248,31 +291,39 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <div class="grid">
                                     <div class="inner mk-bg-img">
-                                        <div class="details ">
+                                        <div style="padding-left: 20px; padding-right: 20px" class="details">
                                             <div class="info">
-                                                <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/Imagen2_Servicios_Inicio.png?alt=media&amp;token=26830509-dc9e-4798-855c-68251b716c21"  class="bg-image"/>
-                                                <a href="service-single.html">
-                                                    <h3><i class="fi flaticon-construction"></i> Power &amp; Energy</h3>
+                                                <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/Imagen1_Servicios_Inicio.png?alt=media&amp;token=149735fa-5206-4b0c-ba6c-ea41633c9a53"  class="bg-image"/>
+                                                <a href="servicios.xhtml">
+                                                    <h3 style="width: 100%; text-align: center"><i class="fi flaticon-construction"></i>Maquinados industriales</h3>
                                                 </a>
-                                                <p>Ut enim ad minim veniam, quis nos trud exerci tation ullamco.</p>
-                                                <a href="service-single.html" class="more">Get Details</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="grid">
                                     <div class="inner mk-bg-img">
-                                        <div class="details ">
+                                       <div style="padding-left: 20px; padding-right: 20px" class="details">
+                                            <div class="info">
+                                                <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/Imagen2_Servicios_Inicio.png?alt=media&amp;token=26830509-dc9e-4798-855c-68251b716c21"  class="bg-image"/>
+                                                <a href="servicios.xhtml">
+                                                    <h3 style="width: 100%; text-align: center"><i class="fi flaticon-construction"></i>Pruebas Eléctricas estáticas</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid">
+                                    <div class="inner mk-bg-img">
+                                       <div style="padding-left: 20px; padding-right: 20px" class="details">
                                             <div class="info">
                                                 <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/Imagen3_Servicios_Inicio.png?alt=media&amp;token=2eaa858d-56ea-42bd-a5c6-6e1587af51e4"  class="bg-image"/>
-                                                <a href="service-single.html">
-                                                    <h3><i class="fi flaticon-construction"></i> Petroleum Refinery</h3>
+                                                <a href="servicios.xhtml">
+                                                    <h3 style="width: 100%; text-align: center"><i class="fi flaticon-construction"></i>Balanceo Dinámico</h3>
                                                 </a>
-                                                <p>Ut enim ad minim veniam, quis nos trud exerci tation ullamco.</p>
-                                                <a href="service-single.html" class="more">Get Details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -313,9 +364,7 @@
                                 <h2>LO QUE OFRECEMOS</h2>
                             </div>
                             <div class="offer-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna.</p>
-                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
-
+                                <p style="text-align: justify">Somos líderes en la prestación de servicios Férreos, con más de 12 años de experiencia, nos convertimos en aliados estratégicos para nuestros clientes.</p>
                                 <a href="#" class="theme-btn read-more"><i class="fa fa-file-pdf-o"></i> Descargar Brochure</a>
                             </div>
                         </div>
@@ -326,9 +375,8 @@
                                         <div class="icon">
                                             <i class="fi flaticon-construction"></i> 
                                         </div>
-                                        <h3>Advanced Technology</h3>
-                                        <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                        <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                        <h3>Tecnología avanzada</h3>
+                                        <p style="text-align: justify">Contamos con la última tecnología para prestar un servicio de excelente calidad.</p>
                                     </div>
                                 </div>
                                 <div class="grid">
@@ -336,9 +384,8 @@
                                         <div class="icon">
                                             <i class="fi flaticon-people"></i> 
                                         </div>
-                                        <h3>Expert Engineers</h3>
-                                        <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                        <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                        <h3>Ingenieros Expertos</h3>
+                                        <p style="text-align: justify">Nuestra empresa cuenta con profesionales graduados de las mejores universidades de la región y con experiencia certificada.</p>
                                     </div>
                                 </div>
                                 <div class="grid">
@@ -346,9 +393,8 @@
                                         <div class="icon">
                                             <i class="fi flaticon-support"></i> 
                                         </div>
-                                        <h3>Customer Support</h3>
-                                        <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                        <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                        <h3>Atención al cliente</h3>
+                                        <p style="text-align: justify">Ofrecemos servicio al cliente, soporte y orientación con respecto a nuestro portafolio de servicios.</p>
                                     </div>
                                 </div>
                                 <div class="grid">
@@ -356,9 +402,8 @@
                                         <div class="icon">
                                             <i class="fi flaticon-time-passing"></i> 
                                         </div>
-                                        <h3>Delivery On time</h3>
-                                        <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                                        <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                        <h3>Entrega a tiempo</h3>
+                                        <p style="text-align: justify">Contamos con un excelente tiempo de entrega de nuestros trabajos, para siempre tener clientes satisfechos.</p>
                                     </div>
                                 </div>
                             </div>
@@ -386,100 +431,110 @@
                         <div class="recent-projects-grids">
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="graficos/logoclientes.png" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_CNR.png?alt=media&amp;token=048737a5-54ce-4c68-bf8f-b78e1cc1e351" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="http://www.cnrcol.co/"><h3>CNR | Colombian Natural Resources</h3></a>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-2.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_Drummond.png?alt=media&amp;token=7c6a5932-9ade-494f-8508-c0839f36875f" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="http://www.drummondltd.com/"><h3>Drummond Ltd.</h3></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-3.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_Fenoco.png?alt=media&amp;token=e6b7443f-1fff-4393-b596-f6656789ba09" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="https://www.fenoco.com.co/"><h3>Ferrocarriles del Norte de Colombia</h3></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-4.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_Wincon.png?alt=media&amp;token=1b3f86dc-a021-42cd-b69d-7551b82c6b1b" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="http://winconsac.com/"><h3>WINCON – INGENIERÍA Y CONSTRUCCIONES</h3></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-5.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_Vale.png?alt=media&amp;token=9335de86-23f9-4c64-aa60-abb4e033cb43" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="http://www.vale.com/EN/Pages/default.aspx"><h3>Vale S.A.</h3></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-2.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_DCFerroca.png?alt=media&amp;token=6ce7aa89-60e9-4257-82b7-bd495017bccb" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="http://www.dcferrocarriles.com/"><h3>D.C. FERROCARRILES</h3></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-3.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_Manser.png?alt=media&amp;token=8a1fd721-3b5e-4f53-be05-f4a14808d627" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="http://manser.com.co/"><h3>Manser</h3></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-4.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_Tanuzi.png?alt=media&amp;token=cc411679-1ce8-4d31-8ae5-654382bcfe30" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="http://www.industriastanuzi.com/"><h3>INDUSTRIAS TANUZI S.A.</h3></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="project-img">
-                                    <img src="assets/images/projects/img-5.jpg" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/nuevas%2FWEB_Servifetec_Logo_GE.png?alt=media&amp;token=ce92e753-5e93-498c-82e6-79b9b2c09a3a" 
+                                         style="width: 390px;
+                                         height: 265px"/>
                                 </div>
                                 <div class="project-info">
                                     <div class="inner-info">
-                                        <a href="#"><h3>Chemical Refinery</h3></a>
-                                        <div class="tags">Michigan, US</div>
+                                        <a href="https://www.ge.com/"><h3>General Electric</h3></a>
                                     </div>
                                 </div>
                             </div>
