@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns="http://www.w3.org/1999/xhtml" 
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
     <h:head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -188,34 +190,49 @@
                             <p>Si requiere realizar algún tipo de trabajo, introduzca sus datos y nosotros nos colocaremos en contacto.</p>
 
                             <div class="contact-form-s1 form">
-                                <form method="post" id="contact-form" class="wpcf7-form contact-validation-active">
+
+                                <h:form id="contact-form" class="wpcf7-form contact-validation-active">
+                                    <p:growl id="growl" showDetail="true"/>   
                                     <div>
                                         <label for="name">Nombre Completo</label>
-                                        <input type="text" id="name" name="name"/>
+                                        <!--<input type="text" id="name" name="name"/>-->
+                                        <p:inputText 
+                                            value="#{MbCotizar.nombre}"
+                                            required="true" 
+                                            requiredMessage="Se requiere su nombre"/>
                                     </div>
                                     <div>
                                         <label for="name">Nombre de la empresa</label>
-                                        <input type="text" id="name" name="name"/>
+                                        <!--<input type="text" id="name" name="name"/>-->
+                                        <p:inputText value="#{MbCotizar.nombreEmpresa}"></p:inputText>
                                     </div>
                                     <div>
                                         <label for="email">Correo electrónico </label>
-                                        <input type="email" id="email" name="email"/>
+                                        <!--<input type="email" id="email" name="email"/>-->
+                                        <p:inputText 
+                                            type="email" 
+                                            value="#{MbCotizar.email}" 
+                                            required="true" 
+                                            requiredMessage="Se requiere que se ingrese su correo electrónico"/>
                                     </div>
                                     <div>
                                         <label for="phone">Número de teléfono</label>
-                                        <input type="text" id="phone" name="phone"/>
+                                        <!--<input type="text" id="phone" name="phone"/>-->
+                                        <p:inputText
+                                            value="#{MbCotizar.telefono}" 
+                                            required="true" 
+                                            type="number"
+                                            requiredMessage="Ingrese su número de teléfono"/>
                                     </div>
                                     <div class="submit-btn-wrap">
-                                        <input value="Enviar" class="theme-btn wpcf7-submit" type="submit"/>
-                                        <div id="loader">
-                                            <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-                                        </div>
+                                        <p:commandButton 
+                                            actionListener="#{MbCotizar.accionEnviar()}" 
+                                            value="ENVIAR" 
+                                            styleClass="theme-btn wpcf7-submit"
+                                            style="width: 100%"
+                                            update="contact-form"/>
                                     </div>
-                                    <div class="error-handling-messages">
-                                        <div id="success">Thank you</div>
-                                        <div id="error"> Error occurred while sending email. Please try again later. </div>
-                                    </div>
-                                </form>
+                                </h:form>
                             </div>                     
                         </div>
                     </div> <!-- end row -->
@@ -299,7 +316,7 @@
 
         <!-- All JavaScript files
         ================================================== -->
-        <script src="assets/js/jquery.min.js"></script>
+        <!--<script src="assets/js/jquery.min.js"></script>-->
         <script src="assets/js/bootstrap.min.js"></script>
 
         <!-- Plugins for this template -->
