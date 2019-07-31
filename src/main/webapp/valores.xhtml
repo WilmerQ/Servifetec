@@ -241,10 +241,9 @@
                                     </ul>
                                 </div>
                                 <div class="download-brocher-widget widget">
-                                    <a href="BrochureDigital_SERVIFETEC.pdf" download="SERVIFETEC"
-                                       ><i class="fa fa-file-pdf-o"></i>Descargar Brochure</a>
+                                    <a href="https://firebasestorage.googleapis.com/v0/b/pagina-web-235217.appspot.com/o/BrochureDigital_SERVIFETEC.pdf?alt=media&amp;token=6f778ee7-966c-4dfe-8c2b-9704b440aaa1" >
+                                        <i class="fa fa-file-pdf-o"></i>Descargar Brochure</a>
                                 </div>
-
                             </div>
                         </div>
                     </div> <!-- end row -->
@@ -320,7 +319,30 @@
         </div>
         <!-- end of page-wrapper -->
 
+        <script>
+            function descargar() {
+                [
+                    {
+                        "origin": ["https://example.com"],
+                        "method": ["GET"],
+                        "maxAgeSeconds": 3600
+                    }
+                ]
 
+                var blob = null;
+                var xhr = new XMLHttpRequest();
+                xhr.setRequestHeader();
+                xhr.
+
+                xhr.open("GET", "");
+                xhr.responseType = "blob";
+                xhr.onload = function () {
+                    blob = xhr.response;//xhr.response is now a blob object
+                    console.log(blob);
+                }
+                xhr.send();
+            }
+        </script>
 
         <!-- All JavaScript files
         ================================================== -->
